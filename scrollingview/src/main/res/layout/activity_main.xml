@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yoyo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shawsyu.scrollingview.MainActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--背景-->
+        <com.shawsyu.scrollingview.ScrollingView
+            android:id="@+id/scrollingView_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            yoyo:scrollingBackground="@drawable/scrolling_background"
+            yoyo:speed="3.0"/>
+        <!--前景-->
+        <com.shawsyu.scrollingview.ScrollingView
+            android:id="@+id/scrollingView_fore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            yoyo:scrollingBackground="@drawable/scrolling_foreground"
+            yoyo:speed="4.8"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/van"/>
+    </FrameLayout>
+</LinearLayout>
